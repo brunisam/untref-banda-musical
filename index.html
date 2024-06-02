@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Banda musical</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="untref-top">
+      <div class="untref-bar untref-black untref-card">
+        <a
+          class="untref-bar-item untref-button untref-padding-large untref-hide-medium untref-hide-large untref-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="untref-bar-item untref-button untref-padding-large"
+          >HOME</a
+        >
+        <a
+          href="#band"
+          class="untref-bar-item untref-button untref-padding-large untref-hide-small"
+          >BAND</a
+        >
+        <a
+          href="#tour"
+          class="untref-bar-item untref-button untref-padding-large untref-hide-small"
+          >TOUR</a
+        >
+        <a
+          href="#contact"
+          class="untref-bar-item untref-button untref-padding-large untref-hide-small"
+          >CONTACT</a
+        >
+        <div class="untref-dropdown-hover untref-hide-small">
+          <button class="untref-padding-large untref-button" title="More">
+            MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="untref-dropdown-content untref-bar-block untref-card-4">
+            <a href="#" class="untref-bar-item untref-button">Merchandise</a>
+            <a href="#" class="untref-bar-item untref-button">Extras</a>
+            <a href="#" class="untref-bar-item untref-button">Media</a>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="untref-padding-large untref-hover-red untref-hide-small untref-right"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <nav
+      id="navDemo"
+      class="untref-bar-block untref-black untref-hide untref-hide-large untref-hide-medium untref-top"
+      style="margin-top: 46px"
+    >
+      <a
+        href="#band"
+        class="untref-bar-item untref-button untref-padding-large"
+        onclick="myFunction()"
+        >BAND</a
+      >
+      <a
+        href="#tour"
+        class="untref-bar-item untref-button untref-padding-large"
+        onclick="myFunction()"
+        >TOUR</a
+      >
+      <a
+        href="#contact"
+        class="untref-bar-item untref-button untref-padding-large"
+        onclick="myFunction()"
+        >CONTACT</a
+      >
+      <a
+        href="#"
+        class="untref-bar-item untref-button untref-padding-large"
+        onclick="myFunction()"
+        >MERCH</a
+      >
+    </nav>
+
+    <!-- Page content -->
+    <main class="untref-content" style="max-width: 2000px; margin-top: 46px">
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides untref-display-container untref-center">
+        <img src="./img/la.png" style="width: 100%" />
+        <div
+          class="untref-display-bottommiddle untref-container untref-text-white untref-padding-32 untref-hide-small"
+        >
+          <h3>Los Angeles</h3>
+          <p><b>We had the best time playing at Venice Beach!</b></p>
+        </div>
+      </div>
+      <div class="mySlides untref-display-container untref-center">
+        <img src="./img/ny.png" style="width: 100%" />
+        <div
+          class="untref-display-bottommiddle untref-container untref-text-white untref-padding-32 untref-hide-small"
+        >
+          <h3>New York</h3>
+          <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+        </div>
+      </div>
+      <div class="mySlides untref-display-container untref-center">
+        <img src="./img/chicago.png" style="width: 100%" />
+        <div
+          class="untref-display-bottommiddle untref-container untref-text-white untref-padding-32 untref-hide-small"
+        >
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div>
+      </div>
+
+      <!-- The Band Section -->
+      <section
+        class="untref-container untref-content untref-center untref-padding-64"
+        style="max-width: 800px"
+        id="band"
+      >
+        <h2 class="untref-wide">THE UNTREF BAND</h2>
+        <p class="untref-opacity"><i>We love music</i></p>
+        <p class="untref-justify">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </section>
+      <!-- TODO: Team Members Pictures -->
+
+      <!-- TODO: The Tour Section -->
+
+      <!-- Ticket Modal -->
+      <section id="ticketModal" class="untref-modal">
+        <div class="untref-modal-content untref-animate-top untref-card-4">
+          <header
+            class="untref-container untref-teal untref-center untref-padding-32"
+          >
+            <span
+              onclick="document.getElementById('ticketModal').style.display='none'"
+              class="untref-button untref-teal untref-xlarge untref-display-topright"
+              >×</span
+            >
+            <h2 class="untref-wide">
+              <i class="fa fa-suitcase untref-margin-right"></i>Tickets
+            </h2>
+          </header>
+          <div class="untref-container">
+            <p>
+              <label
+                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
+                person</label
+              >
+            </p>
+            <input
+              class="untref-input untref-border"
+              type="text"
+              placeholder="How many?"
+            />
+            <p>
+              <label><i class="fa fa-user"></i> Send To</label>
+            </p>
+            <input
+              class="untref-input untref-border"
+              type="text"
+              placeholder="Enter email"
+            />
+            <button
+              class="untref-button untref-block untref-teal untref-padding-16 untref-section untref-right"
+            >
+              PAY <i class="fa fa-check"></i>
+            </button>
+            <button
+              class="untref-button untref-red untref-section"
+              onclick="document.getElementById('ticketModal').style.display='none'"
+            >
+              Close <i class="fa fa-remove"></i>
+            </button>
+            <p class="untref-right">
+              Need <a href="#" class="untref-text-blue">help?</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: The Contact Section -->
+    </main>
+
+    <!-- Image of location/map -->
+    <img
+      src="./img/map.png"
+      class="untref-image untref-greyscale-min"
+      style="width: 100%"
+    />
+
+    <!-- Footer -->
+    <footer
+      class="untref-container untref-padding-64 untref-center untref-opacity untref-light-grey untref-xlarge"
+    >
+      <i class="fa fa-facebook-official untref-hover-opacity"></i>
+      <i class="fa fa-instagram untref-hover-opacity"></i>
+      <i class="fa fa-snapchat untref-hover-opacity"></i>
+      <i class="fa fa-pinterest-p untref-hover-opacity"></i>
+      <i class="fa fa-twitter untref-hover-opacity"></i>
+      <i class="fa fa-linkedin untref-hover-opacity"></i>
+      <p class="untref-medium">
+        Powered by
+        <u>UNTREF</u>
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

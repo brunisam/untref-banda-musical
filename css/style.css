@@ -1624,3 +1624,41 @@ body {
 .mySlides {
   display: none;
 }
+
+/* Seccion Imagenes de fotografo */
+
+.image-section {
+  display: flex;
+  justify-content: center;  /* Centramos los elementos en la línea */
+  align-items: center; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-container {
+  text-align: center;
+  flex: 0 1 auto; /* Permite ajustar el ancho de los contenedores automáticamente */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-text {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Especificamos un estilo especial para la primera y segunda imagen para que estén pegadas */
+.image-container:nth-child(1),
+.image-container:nth-child(2) {
+  margin-right: -4px;
+}
+
+/* Especificamos un estilo especial para la tercera imagen para que esté separada */
+.image-container:nth-child(3) {
+  margin-left: 80px; 
+}
